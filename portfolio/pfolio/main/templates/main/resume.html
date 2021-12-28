@@ -1,4 +1,5 @@
 {% extends 'main/layout.html' %}
+{% load static %}
 
 {% block title %}aschechter.dev | Resume{% endblock %}
 
@@ -8,6 +9,126 @@
         <p class="title has-text-info">
             Resume
         </p>
+    </div>
+</section>
+
+<section class="mt-6 mb-6" style="display: flex; justify-content: center; align-items: center; width: 80vw; margin-left: 10vw;">
+    <div class="card has-background-info animate__animated animate__fadeInUpBig" style="width: 30%; height: 100%;">
+        <div class="card-content">
+            <p class="title has-text-link">
+                Ariel Schechter
+            </p>
+        </div>
+        <div class="card-image">
+            <figure class="image">
+                <img style="border-radius: 50%; transform: scale(0.7);" src="{% static 'main/images/ariphoto.jpg' %}" alt="Photo">
+            </figure>
+        </div>
+        <div class="card-content">
+            <span class="icon-text">
+                    <span class="icon">
+                        <i class="fas fa-map-marked-alt" style="color: white;"></i>
+                    </span>
+                    <p class="subtitle has-text-white">300 Rector Place, New York, NY, 10280</p>
+            </span>
+            <br><br><br>
+            <span class="icon-text">
+                <span class="icon">
+                    <i class="fas fa-phone-square" style="color: white;"></i>
+                </span>
+                <p class="subtitle has-text-white">312-493-0606</p>
+            </span>
+            <br><br><br>
+            <span class="icon-text">
+                <span class="icon">
+                    <i class="fas fa-envelope-open-text" style="color: white;"></i>
+                </span>
+                <p class="subtitle has-text-white">alschechter@wpi.edu</p>
+            </span>
+            <br><br><br>
+            <span class="icon-text">
+                <span class="icon">
+                    <i class="fas fa-globe" style="color: white;"></i>
+                </span>
+                <p class="subtitle has-text-white">www.aschechter.dev</p>
+            </span>
+            <br>
+        </div>
+    </div>
+
+    <div class="pl-6 animate__animated animate__delay-1s animate__fadeInRight" style="width: 35%;">
+        <section>
+            <header class="title has-text-link">Experience</header>
+            <p><b>March 2021-Present</b></p>
+            <p>Co-founder | Full-Stack-Developer | <a href="https://www.beatstreet.live" target="_blank">www.beatstreet.live</a></p>
+            <br>
+            <p><b>June 2021-August 2021</b></p>
+            <p>Rowing Coach | Assistant Coach | <a href="https://www.portrowing.org/" target="_blank">Friends of Port Rowing</a></p>
+            <br>
+            <p><b>December 2021-Present</b></p>
+            <p>Developer | Full-Stack-Developer | <a href="/">www.aschechter.dev</a></p>
+
+            <br><br>
+
+            <header class="title has-text-link">Education</header>
+            <p><b>Worcester Polytechnic Institute, Worcester, Massachusetts</b></p>
+            <ul>
+                <li>+ Current freshman majoring in Computer Science</li>
+                <li>+ Relevant Coursework: Object Oriented Programming, Systems Programming Concepts</li>
+                <li>+ Extracurriculars: Men's Varsity Rowing</li>
+            </ul>
+            <br>
+            <p><b>Stuyvesant High School, New York, NY</b></p>
+            <ul>
+                <li>+ Graduated in 2021 with a 3.7 GPA</li>
+                <li>+ Relevant Coursework: AP Computer Science, Software Development</li>
+            </ul>
+        </section>
+    </div>
+
+    <div class="pl-6 animate__animated animate__delay-2s animate__fadeInRight" style="width: 35%;">
+        <section>
+            <header class="title has-text-link">Technical Skills</header>
+            <p class="mb-1">Tools</p>
+            <div class="tags">
+                <span class="tag is-info">Eclipse IDE</span>
+                <span class="tag has-text-white" style="background-color: #8561c4;">MS Visual Studio</span>
+                <span class="tag is-link">JUnit Testing</span>
+            </div>
+            <p class="mb-1">Languages</p>
+            <div class="tags">
+                <span class="tag has-text-white" style="background-color: #2b5b84;">Python</span>
+                <span class="tag is-link">Java</span>
+                <span class="tag is-warning">Javascript</span>
+                <span class="tag is-danger">HTML</span>
+                <span class="tag has-text-white" style="background-color: #038cfc;">CSS</span>
+                <span class="tag is-danger">SASS/SCSS</span>
+                <span class="tag is-info">C</span>
+            </div>
+            <p class="mb-1">Frameworks</p>
+            <div class="tags">
+                <span class="tag has-text-white" style="background-color: #44b78b;">Django</span>
+                <span class="tag is-dark">Flask</span>
+                <span class="tag is-danger">Bootstrap</span>
+                <span class="tag has-text-dark" style="background-color: #61dafb;">React</span>
+                <span class="tag has-text-white" style="background-color: #00d1b2;">Bulma</span>
+            </div>
+            <p class="mb-1">Cloud-Based-Technologies</p>
+            <div class="tags">
+                <span class="tag is-info">AWS</span>
+                <span class="tag has-text-white" style="background-color: #8561c4;">Heroku</span>
+                <span class="tag has-text-white" style="background-color: #038cfc;">DigitalOcean</span>
+            </div>
+
+            <br><br>
+
+            <header class="title has-text-link">Leadership</header>
+            <p><b>Assistant Coach at Port Rowing</b></p>
+            <p>As a coach...</p>
+            <br>
+            <p><b>Captain of Row New York Varsity Crew</b></p>
+            <p>As a captain...</p>
+        </section>
     </div>
 </section>
 {% endblock %}

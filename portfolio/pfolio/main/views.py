@@ -29,7 +29,7 @@ def contact_request(request):
             subject='Someone has contacted you',
             message= name + ' has reached out to you. Info: ' + email_or_phone + '\nMessage: ' + message,
             from_email=settings.EMAIL_HOST_USER,
-            recipient_list=['aschechter03@gmail.com'])
+            recipient_list=['aschechter03@gmail.com', 'alschechter@wpi.edu'])
         return redirect('/?email=1')
     else:
         return HttpResponse("Something went wrong")
