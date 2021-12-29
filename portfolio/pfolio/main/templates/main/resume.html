@@ -1,14 +1,17 @@
 {% extends 'main/layout.html' %}
 {% load static %}
 
-{% block title %}aschechter.dev | Resume{% endblock %}
+{% block title %}aschechter.dev | About{% endblock %}
 
 {% block body %}
 <section class="hero is-primary">
     <div class="hero-body">
-        <p class="title has-text-info">
-            Resume
-        </p>
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+            <p class="title has-text-info">
+                About
+            </p>
+            <p><a href="{% static 'main/files/ArielSchechterResume.pdf' %}" download="ArielSchechterResume.pdf" class="button is-outlined is-danger">Download Resume</a></p>
+        </div>
     </div>
 </section>
 
@@ -71,7 +74,7 @@
             <br><br>
 
             <header class="title has-text-link">Education</header>
-            <p><b>Worcester Polytechnic Institute, Worcester, Massachusetts</b></p>
+            <p><b>Worcester Polytechnic Institute</b></p>
             <ul>
                 <li>+ Current freshman majoring in Computer Science</li>
                 <li>+ Relevant Coursework: Object Oriented Programming, Systems Programming Concepts</li>
@@ -120,14 +123,20 @@
                 <span class="tag has-text-white" style="background-color: #038cfc;">DigitalOcean</span>
             </div>
 
-            <br><br>
+            <br>
 
             <header class="title has-text-link">Leadership</header>
             <p><b>Assistant Coach at Port Rowing</b></p>
-            <p>As a coach...</p>
+            <p><ul>
+                <li>+ Head Coach for learn-to-row</li>
+                <li>+ Assistant Coach for over 30 high school freshman and sophomores with varying levels of experience</li>
+            </ul></p>
             <br>
             <p><b>Captain of Row New York Varsity Crew</b></p>
-            <p>As a captain...</p>
+            <p><ul>
+                <li>+ Worked with coaches and teammates to design an effective training plan</li>
+                <li>+ Mentored rowers one-on-one</li>
+            </ul></p>
         </section>
     </div>
 </section>
