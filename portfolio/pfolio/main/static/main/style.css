@@ -22,3 +22,9 @@
     margin-right: 30vw;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
+
+@media only screen and (max-width: 760px) {
+    #main-hero {
+        height: 50vh;
+    }
+}
