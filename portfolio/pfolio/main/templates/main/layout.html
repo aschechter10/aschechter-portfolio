@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static 'main/bulma/css/bulma.css' %}">
     <link rel="stylesheet" href="{% static 'main/animate.css-main/animate.css' %}">
+    <link rel="stylesheet" href="{% static 'main/style.css' %}">
     <script type="text/javascript" src="{% static 'main/jquery-3.6.0.min.js' %}"></script>
     <script src="https://kit.fontawesome.com/fcc33fd7db.js" crossorigin="anonymous"></script>
     <title>{% block title %}{% endblock %}</title>
@@ -33,12 +34,12 @@
                     Try me!
                   </a>
 
-                  <a class="navbar-item ml-5" href="{% url 'projects' %}">
-                    Projects
-                  </a>
-            
                   <a class="navbar-item ml-5" href="{% url 'about' %}">
                     About
+                  </a>
+
+                  <a class="navbar-item ml-5" href="{% url 'projects' %}">
+                    Projects
                   </a>
             
                   <div class="navbar-item ml-5 animate__animated" id="nav-contact">
@@ -93,6 +94,18 @@
     </footer>
 
     <script type="text/javascript">
+      $(document).ready(function() {
+
+      // Check for click events on the navbar burger icon
+      $(".navbar-burger").click(function() {
+
+          // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+          $(".navbar-burger").toggleClass("is-active");
+          $(".navbar-menu").toggleClass("is-active");
+
+      });
+      });
+
       $('#nav-try-me').click(function() {
         $('#nav-try-me').addClass('animate__hinge');
         $('#nav-try-me').html('Not again :(');
